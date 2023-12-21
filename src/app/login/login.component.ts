@@ -21,7 +21,7 @@ export class LoginComponent {
     });
   }
 
-  login(): void {
+  login(): void { //ngOnInit is a life cycle hook called by Angular to indicate that the Angular is done creating the component.
     this.http.get<any>("http://localhost:3000/authentication")
       .subscribe(res => {
         const user = res.find((a: any) => {
