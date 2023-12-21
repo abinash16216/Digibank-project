@@ -1,0 +1,116 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "transactions": [
+    {
+      "sourceAccount": "ACC001",
+      "destinationAccount": "ACC345",
+      "amount": 1,
+      "transferDate": "2023-12-12",
+      "id": 1
+    },
+    {
+      "sourceAccount": "ACC002",
+      "destinationAccount": "ACC345",
+      "amount": 1000,
+      "transferDate": "2023-12-13",
+      "id": 2
+    },
+    {
+      "sourceAccount": "ACC001",
+      "destinationAccount": "ACC345",
+      "amount": 1000,
+      "transferDate": "2023-12-13",
+      "id": 4
+    },
+    {
+      "sourceAccount": "ACC001",
+      "destinationAccount": "ACC346",
+      "amount": 1000,
+      "transferDate": "2023-12-13",
+      "id": 5
+    },
+    {
+      "sourceAccount": "ACC002",
+      "destinationAccount": "ACC987",
+      "amount": 1000,
+      "transferDate": "2023-12-13",
+      "id": 6
+    },
+    {
+      "sourceAccount": "ACC001",
+      "destinationAccount": "ACC390",
+      "amount": 1,
+      "transferDate": "2023-12-13",
+      "id": 7
+    },
+    {
+      "sourceAccount": "ACC002",
+      "destinationAccount": "ACC390",
+      "amount": 1,
+      "transferDate": "2023-12-13",
+      "id": 8
+    },
+    {
+      "sourceAccount": "ACC001",
+      "destinationAccount": "ACC002",
+      "amount": 1,
+      "transferDate": "2023-12-13",
+      "id": 9
+    },
+    {
+      "sourceAccount": "ACC002",
+      "destinationAccount": "ACC0012",
+      "amount": 1000,
+      "transferDate": "2023-12-13",
+      "id": 12
+    },
+    {
+      "sourceAccount": "ACC001",
+      "destinationAccount": "ACC009",
+      "amount": 1000,
+      "transferDate": "2023-12-13",
+      "id": 13
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "accountNumber": "ACC001",
+      "accountType": "Savings",
+      "availableBalance": 6680561
+    },
+    {
+      "id": 2,
+      "accountNumber": "ACC002",
+      "accountType": "Current",
+      "availableBalance": 5976998
+    },
+    {
+      "id": 3,
+      "accountNumber": "ACC003",
+      "accountType": "Fixed Deposit",
+      "availableBalance": 3950000
+    }
+  ],
+  "authentication": [
+    {
+      "id": 1,
+      "username": "Abinash",
+      "password": "1234"
+    }
+  ],
+  "updateBalance": []
+}

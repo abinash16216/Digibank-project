@@ -1,0 +1,30 @@
+h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .table-container {
+    margin-top: 16px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  

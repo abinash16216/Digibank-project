@@ -1,0 +1,82 @@
+<div class="d-flex flex-row">
+  <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 280px;">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">Navigation</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a routerLink="/account-summary" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+          Account Summary
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/transfer" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link link-body-emphasis">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+          Transfer Money
+        </a>
+      </li>
+    </ul>
+    <hr>
+  </div>
+
+  <div class="d-flex flex-column flex-grow-1">
+    <h2 class="text-center">Transfer Funds</h2>
+  
+    <form [formGroup]="transferForm" (ngSubmit)="transferFunds()" class="d-flex justify-content-center">
+      <div class="row g-3">
+        <div class="col">
+          <label for="sourceAccount">Source Account:</label>
+          <select id="sourceAccount" name="sourceAccount" formControlName="sourceAccount" class="form-control">
+            <option value="ACC001">ACC001 - Savings</option>
+            <option value="ACC002">ACC002 - Current</option>
+          </select>
+        </div>
+
+        <div class="col">
+          <label for="destinationAccount">Destination Account:</label>
+          <input
+            type="text"
+            id="destinationAccount"
+            name="destinationAccount"
+            formControlName="destinationAccount"
+            placeholder="PayeeID (e.g., ACC001)"
+            class="form-control"
+            required
+          >
+        </div>
+
+        <div class="col">
+          <label for="amount">Amount:</label>
+          <input
+            type="number"
+            id="amount"
+            name="amount"
+            formControlName="amount"
+            class="form-control"
+            required
+            min="0"
+          >
+        </div>
+
+        <div class="col">
+          <label for="transferDate">Date of Transfer:</label>
+          <input
+            type="date"
+            id="transferDate"
+            name="transferDate"
+            formControlName="transferDate"
+            class="form-control"
+            required
+          >
+        </div>
+
+        <div class="fixed-bottom p-3 d-flex justify-content-center">
+          <button type="submit">Transfer</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
